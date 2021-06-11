@@ -4,11 +4,11 @@
 			"path": "BlynkServo"
 		},
 		{
-			"path": "Stepper Test 1"
+			
+			"path": "Gimbal"
 		},
 		{
-			"name": "LifebridgeGimbal",
-			"path": "."
+			"path": "Stepper Test 1"
 		}
 	],
 	"settings": {}
