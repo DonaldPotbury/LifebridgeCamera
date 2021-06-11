@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "BlynkServo"
+		},
+		{
+			"path": "Stepper Test 1"
+		},
+		{
+			"name": "LifebridgeGimbal",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
