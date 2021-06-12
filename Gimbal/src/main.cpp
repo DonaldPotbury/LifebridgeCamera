@@ -20,7 +20,7 @@ char pass[] = "rod472frog3429cat";
 //char pass[] = "Goldfish01";
 
 int vpins[4] = {0,0,0,0};
-int speed    = 3500;
+int speed    = 3000;
 
 // Stepper Motor Pins
 uint8_t pan_motor[4] = {D1, D2, D3, D4};
@@ -60,24 +60,6 @@ BLYNK_WRITE(V3)
 {
   vpins[3] = param.asInt();
   Serial.println(vpins[3]);
-}
-
-BLYNK_WRITE(V4)
-{
-  int pinValue = param.asInt();
-  switch (pinValue)
-  {
-  case 1:
-    speed = 8000;
-    break;
-  case 2:
-    speed = 4000;
-    break;
-  case 3:
-    speed = 3000;
-    break;
-  } 
-  Serial.println(pinValue);
 }
 
 
