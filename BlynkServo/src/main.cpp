@@ -1,7 +1,7 @@
 
 //-----------------------------------------------------------------------------
 // Program: BlynkServo
-// Author:  Don Potburty
+// Author:  Don Potbury
 // Description:
 //    This program controls a servo and a stepper motor
 //-----------------------------------------------------------------------------
