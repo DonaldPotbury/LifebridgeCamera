@@ -11,7 +11,7 @@
 #include <BlynkSimpleEsp8266.h>
 #include <Servo.h>
 
-uint8_t motor_A[] = {D5, D6, D7, D8};
+uint8_t pan_motor[] = {D5, D6, D7, D8};
 
 uint8_t stepper_states [4][4] =
 {
@@ -26,7 +26,7 @@ uint8_t stepper_states [4][4] =
 #define IN6   D6   
 #define IN7   D7   
 #define IN8   D8   
-#define t   2500
+#define speed   2500
 
 Servo myservo;
 
@@ -116,11 +116,11 @@ void loop()
   {
     for (int row=0; row<4; row++)
     {
-      digitalWrite(motor_A[0], stepper_states[row][3]);
-      digitalWrite(motor_A[1], stepper_states[row][2]);
-      digitalWrite(motor_A[2], stepper_states[row][1]);
-      digitalWrite(motor_A[3], stepper_states[row][0]);
-      delayMicroseconds (t);
+      digitalWrite(pan_motor[0], stepper_states[row][3]);
+      digitalWrite(pan_motor[1], stepper_states[row][2]);
+      digitalWrite(pan_motor[2], stepper_states[row][1]);
+      digitalWrite(pan_motor[3], stepper_states[row][0]);
+      delayMicroseconds (speed);
     } 
   }  
 
@@ -129,11 +129,11 @@ void loop()
   {
      for (int row=0; row<4; row++)
     {
-      digitalWrite(motor_A[0], stepper_states[row][0]);
-      digitalWrite(motor_A[1], stepper_states[row][1]);
-      digitalWrite(motor_A[2], stepper_states[row][2]);
-      digitalWrite(motor_A[3], stepper_states[row][3]);
-      delayMicroseconds (t);
+      digitalWrite(pan_motor[0], stepper_states[row][0]);
+      digitalWrite(pan_motor[1], stepper_states[row][1]);
+      digitalWrite(pan_motor[2], stepper_states[row][2]);
+      digitalWrite(pan_motor[3], stepper_states[row][3]);
+      delayMicroseconds (speed);
     } 
   }
 }

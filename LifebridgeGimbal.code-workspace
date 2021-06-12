@@ -11,5 +11,23 @@
 			"path": "Stepper Test 1"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"*.tcc": "cpp",
+			"bitset": "cpp",
+			"complex": "cpp",
+			"deque": "cpp",
+			"list": "cpp",
+			"string": "cpp",
+			"vector": "cpp",
+			"functional": "cpp",
+			"memory": "cpp",
+			"fstream": "cpp",
+			"istream": "cpp",
+			"ostream": "cpp",
+			"ratio": "cpp",
+			"type_traits": "cpp",
+			"typeinfo": "cpp"
+		}
+	}
 }
