@@ -1,7 +1,10 @@
 
-/*************************************************************
- 
- *************************************************************/
+//-----------------------------------------------------------------------------
+// Program: BlynkServo
+// Author:  Don Potburty
+// Description:
+//    This program controls a servo and a stepper motor
+//-----------------------------------------------------------------------------
 
 /* Comment this out to disable prints and save space */
 #define BLYNK_PRINT Serial
